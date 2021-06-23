@@ -6,8 +6,8 @@ license = "MIT"
 licenselink = "https://github.com/piokozi/simple-gruv-hugo/blob/master/LICENSE"
 description = "A minimalist gruvbox theme with katex"
 homepage = "https://github.com/piokozi/simple-gruv"
-tags = [minimalist, minimal, simple, katex, gruvbox]
-features = [katex]
+tags = ["minimalist", "minimal", "simple", "katex", "gruvbox"]
+features = ["mathjax"]
 min_version = "0.41.0"
 
 [author]

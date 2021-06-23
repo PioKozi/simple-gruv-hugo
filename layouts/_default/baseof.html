@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    {{ if .Params.katex }}{{partial "katex.html" . }}{{ end }}
+    {{ if .Params.math }}{{partial "mathjax.html" . }}{{ end }}
     <body>
         {{- partial "header.html" . -}}
         <div id="content">
