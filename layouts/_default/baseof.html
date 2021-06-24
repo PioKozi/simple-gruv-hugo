@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
-    {{ if .Params.math }}{{partial "mathjax.html" . }}{{ end }}
+    {{ if .Params.math }}{{ partial "mathjax.html" . }}{{ end }}
     <body>
         {{- partial "header.html" . -}}
+        {{ if .Params.toc }}
+        <aside>
+            {{ .TableOfContents }}
+        </aside>
+        {{ end }}
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
